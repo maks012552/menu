@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ВОТ СЮДА ПИШЕТСЯ CSS */
+
+.products{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:10px;
+}
+
+.product{
+  background:#f2f2f2;
+  padding:20px;
+  text-align:center;
+  border-radius:10px;
+}
+
+/* Настройка для телефона */
+@media (max-width:600px){
+  .products{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="products">
+
+<div class="product">Товар 1</div>
+<div class="product">Товар 2</div>
+<div class="product">Товар 3</div>
+<div class="product">Товар 4</div>
+<div class="product">Товар 5</div>
+<div class="product">Товар 6</div>
+
+</div>
+
+</body>
+</html>
